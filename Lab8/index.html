@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Week 8 Lab - JavaScript DOM and Arrays</title>
+	<meta charset="utf-8">
+
+	<style type="text/css">
+		#errDiv1 {
+			color: cadetblue;
+		}
+	</style>
+</head>
+
+<body>
+	<script src="myScript.js">
+	</script>
+	<div>
+		<div>
+			<p id="errDiv1"></p>
+		</div>
+		<form name="orderForm" method="POST" action="processForm.html" onsubmit="return validate()">
+			<table border="0">
+				<tr>
+					<th>Personal Information</th>
+					<th>Order Information</th>
+				</tr>
+				<tr>
+					<td>
+						<table border="0">
+							<tr id="akash"></tr>
+							<tr>
+								<td>First Name:</td>
+								<td>
+									<input type="text" name="fName" id="firstName" size="30" placeholder="Enter First Name Here">
+								</td>
+							</tr>
+							<tr>
+								<td>Last Name:</td>
+								<td>
+									<input type="text" name="lName" id="lastName" size="30" placeholder="Enter Last Name Here">
+								</td>
+							</tr>
+							<tr>
+								<td>Email:</td>
+								<td>
+									<input type="text" name="email" id="email" size="30" placeholder="Enter E-mail Here">
+								</td>
+							</tr>
+							<tr>
+								<td>Phone (Day):</td>
+								<td>
+									<input type="text" name="phoneDay" id="phoneDay" size="30" placeholder="Enter Day Phone">
+								</td>
+							</tr>
+							<tr>
+								<td>Phone (Evening):</td>
+								<td>
+									<input type="text" name="phoneEvening" id="phoneEvening" size="30" placeholder="Enter Evening Phone">
+								</td>
+							</tr>
+							<tr>
+								<td>Address:</td>
+								<td>
+									<input type="text" name="mailaddress" id="mailAddress" size="30" placeholder="Enter Address">
+								</td>
+							</tr>
+							<tr>
+								<td>City:</td>
+								<td>
+									<input type="text" name="mailcity" id="mailCity" size="30" placeholder="Enter City">
+								</td>
+							</tr>
+							<tr>
+								<td>Province:</td>
+								<td>
+									<select name="prov" id="province" size="1">
+										<option value="wrong">Select a province</option>
+										<option value="BC">British Columbia</option>
+										<option value="AB">Alberta</option>
+										<option value="SK">Saskatchewan</option>
+										<option value="MB">Manitoba</option>
+										<option value="ON">Ontario</option>
+										<option value="QC">Québec</option>
+										<option value="NB">New Brunswick</option>
+										<option value="NS">Nova Scotia</option>
+										<option value="PE">Prince Edward Island</option>
+										<option value="NF">Newfoundland</option>
+										<option value="YK">Yukon</option>
+										<option value="NWT">Northwest Territories</option>
+										<option value="NU">Nunavut</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Postal Code:</td>
+								<td>
+									<input type="text" name="pc" id="postalCode" maxlength="6" placeholder="Enter Postal Code Here">
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table>
+							<tr>
+								<th>Select your products:</th>
+							</tr>
+							<tr>
+								<td>Widget #1</td>
+								<td>
+									<input type="text" name="prod1" id="widget1qty" size="1" value="0">Qty @ <strong>$7.00/ea</strong>
+								</td>
+							</tr>
+							<tr>
+								<td>Widget #2</td>
+								<td>
+									<input type="text" name="prod2" id="widget2qty" size="1" value="0">Qty @ <strong>$12.50/ea</strong>
+								</td>
+							</tr>
+							<tr>
+								<td>Widget #3</td>
+								<td>
+									<input type="text" name="prod3" id="widget3qty" size="1" value="0">Qty @ <strong>$18.75/ea</strong>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th>Shipping Type:</th>
+							</tr>
+							<tr>
+								<td>
+									<input type="radio" name="shipType" id="shipTypeStandard" value="Standard">
+								</td>
+								<td>Standard ($2.50)</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="radio" name="shipType" id="shipTypeExpress" value="Express">
+								</td>
+								<td>Express ($8.50)</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="radio" name="shipType" id="shipTypeOvernight" value="Overnight">
+								</td>
+								<td>Overnight ($12.50)</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input name="btnSubmit" type="submit" autofocus="" id="btnSubmit" value="Submit Order" function="return validate()">
+						<input type="button" name="btnReset" id="btnReset" value="Reset Form" onclick="location.reload()">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+
+</body>
+
+</html>

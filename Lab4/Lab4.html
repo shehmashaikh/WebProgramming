@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lab 4 by FirstName LastName</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<h1>Registration</h1>
+				<p>Please enter the following information. Fields marked with an asterisk (<span class="required">*</span>) are required.</p>
+			</header>
+			<div id="content">
+			<fieldset>
+				<legend>Personal Information</legend>
+				<label>* First Name :</label><input type="textbox"><br>
+				<label>* Last Name :</label><input type="textbox"><br>
+				<label>* Address :</label><input type="textbox" maxlength="40" size="40"><br>
+				<label>* City :</label><input type="textbox"><br>
+				<label>* Province : </label>
+				<select>
+<option value=null>Select Province</option>
+<option value="BC">British Columbia</option>
+<option value="AB">Alberta</option>
+<option value="SK">Saskatchewan</option>
+<option value="MB">Manitoba</option>
+<option value="ON">Ontario</option>
+<option value="QC">Quebec</option>
+<option value="NB">New Brunswick</option>
+<option value="AB">Alberta</option>
+<option value="NS">Nova Scotia</option>
+<option value="PE">Prince Edward Island</option>
+<option value="NF">Newfoundland</option>
+<option value="YK">Yukon</option>
+<option value="NWT">Northwest Territories</option>
+<option value="NU">Nunavut</option>
+
+
+
+				<!-- * Postal Code | textbox, maximum length of 6 characters -->
+				<!-- * Email address | textbox -->
+				<!-- * Home phone | textbox -->
+				<!-- Work phone | textbox -->
+					
+			</fieldset>
+			<fieldset>
+				<legend>Payment Information</legend>
+				<!-- Credit Card Type | radio buttons
+					 
+					 There should be three buttons: one for VISA, one for MasterCard, and one for American Express.
+					 All three buttons can go in one <td> element.
+					 
+					 NOTE: each radio button should have the same name, but a different id. For example, you might use
+					 the name "creditCard" for each, but "creditCardVisa", "creditCardAmex" and "creditCardMasterCard"
+					 as the id's. 
+					 
+					 Also, please review the lab instructions regarding the placement of credit card icon images beside
+					 each radio button. 
+				-->
+				<!-- Credit Card Number | textbox -->
+				<!-- Expiry Date | textbox, maximum 5 characters (MM/YY) -->
+			</fieldset>
+			<fieldset>
+				<legend>Agree and Submit</legend>
+					<!-- * Agree to Terms and Conditions? | checkbox, value of 'yes' -->
+					<!-- No field name. Place a submit button in one column, and reset button in the other. -->
+			</fieldset>
+			</div><!-- End Content -->
+			<footer>	
+				<p>&copy;2013 CST8285. All rights reserved.</p>
+			</footer>
+		</div><!-- End Wrapper -->
+	</body>
+</html>
